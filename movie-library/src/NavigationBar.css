@@ -1,0 +1,26 @@
+.nav-top {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.nav-top .links {
+    display:flex;
+    align-items: center;
+}
+
+.nav-top .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.nav-top .links ul li {
+    display:inline-block;
+    width: 100px;
+}
+
+.nav-top .links ul li span {
+    cursor: pointer;
+}
