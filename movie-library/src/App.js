@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar changePage={this.changePage} />
-        <Page page={this.state && this.state.page || 'movies'} />
+        {/* <Page page={this.state && this.state.page || 'movies'} /> */}
         <Footer />
       </div>
     );

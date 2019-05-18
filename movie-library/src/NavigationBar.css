@@ -21,6 +21,7 @@
     width: 100px;
 }
 
-.nav-top .links ul li span {
+.nav-top .links ul li a {
     cursor: pointer;
+    text-decoration: none;
 }
