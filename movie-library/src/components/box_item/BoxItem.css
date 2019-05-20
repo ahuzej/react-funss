@@ -1,0 +1,45 @@
+.item{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    max-height: 700px;
+    box-shadow: #999 0 0 15px 1px;
+    transform: scale(0.88);
+    transition: all 0.75s ease-out;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #282c34;
+}
+
+.item:hover{
+    transform: scale(1.2);
+    z-index: 1000;
+    position: relative;
+}
+
+.item img{
+    width: 100%;
+}
+
+.item .description {
+    padding: 0 10px 10px;
+}
+
+.item .description .summary{
+    display: none;
+}
+
+.item .genres{
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.item .genre{
+    margin: 3px;
+    padding: 3px;
+    background: rgb(58, 68, 114);
+    border: 2px solid rgb(170, 217, 255);
+    color: white;
+}
+

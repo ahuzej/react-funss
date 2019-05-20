@@ -2,8 +2,9 @@ import React from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './NavigationBar.css';
-import Movies from './Movies';
-import Shows from './Shows';
+import Movies from '../movies/Movies';
+import Shows from '../shows/Shows';
+import Home from '../home/Home';
 
 class NavigationBar extends Component {
     render() {
@@ -26,24 +27,12 @@ class NavigationBar extends Component {
                             </li>
                         </ul>
                     </div>
-
-
                 </div>   
+
+                <Route exact path="/" component={Home}/>
                 <Route path="/movies/" component={Movies}/>
                 <Route path="/shows/" component={Shows}/> 
             </Router>
-            // <div className="nav-top">
-            //     <div className="logo">
-            //         <h1>Movie Library</h1>
-            //     </div>
-            //     <div className="links">
-            //         <ul>
-            //             <li><span>Home</span></li>
-            //             <li><span onClick={this.props.changePage.bind(this, 'movies')}>Movies</span></li>
-            //             <li><span onClick={this.props.changePage.bind(this, 'shows')}>Shows</span></li>
-            //         </ul>
-            //     </div>
-            // </div>
         );
     }
 }
