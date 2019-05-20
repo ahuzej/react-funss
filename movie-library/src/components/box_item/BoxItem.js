@@ -23,17 +23,19 @@ class BoxItem extends Component {
 
         return (
             <div className="item">
-                <img src={item.image} alt="" />
-                    <div className="genres">
-                        {
-                            item.genres.map((genre, i) => (
-                                <span key={i} className="genre" title={genre}>{genre}</span>
-                            ))
-                        }
+                <div className="inner">
+                    <img src={item.image} alt="" />
+                        <div className="genres">
+                            {
+                                item.genres.map((genre, i) => (
+                                    <span key={i} className="genre" title={genre}>{genre}</span>
+                                ))
+                            }
+                        </div>
+                    <div className="description">
+                        <h3 className="header">{item.name}</h3>
+                        <p className="summary">{item.summary}</p>
                     </div>
-                <div className="description">
-                    <h3 className="header">{item.name}</h3>
-                    <p className="summary">{item.summary}</p>
                 </div>
             </div>
         );

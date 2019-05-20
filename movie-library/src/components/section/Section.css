@@ -1,10 +1,11 @@
 .page{
-    min-height: 80vh;
+    height: 800px;
     background-color: #282c34;
     color: white;
     display:grid;
     grid-template-columns: 30vh 1fr;
     grid-template-rows: 1fr;
+    overflow:hidden;
   }
   
   .page h1 {
@@ -35,6 +36,10 @@
   .page .content {
     grid-column-start: 2;
     padding: 0 20px;
+    display:flex;
+    flex-wrap:wrap;
+    overflow:scroll;
+    overflow-x:hidden;
   }
   
   @keyframes border-entrance {

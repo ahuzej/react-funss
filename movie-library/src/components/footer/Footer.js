@@ -4,7 +4,7 @@ import { Component } from "react";
 class Footer extends Component{
     render(){
         return (
-            <p>Footerrino</p>
+            <p style={{margin:'0'}}>Footerrino</p>
         );
     }
 }
