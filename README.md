@@ -1,2 +1,2 @@
 # react-funss
-going ham!!
+React practicing
